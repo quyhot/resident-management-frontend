@@ -1,16 +1,16 @@
 <p-table [value]="residents || []">
   <ng-template pTemplate="header">
     <tr>
-      <th>Code</th>
-      <th>Name</th>
-      <th>Category</th>
-      <th>Quantity</th>
+      <th>Tên</th>
+      <th>Giới tính</th>
+      <th>Email</th>
+      <th>Điện thoại</th>
     </tr>
   </ng-template>
   <ng-template pTemplate="body" let-resident>
     <tr>
-      <td>{{resident.avatar}}</td>
       <td>{{resident.name}}</td>
+      <td>{{resident.gender ? 'Nam' : 'Nữ'}}</td>
       <td>{{resident.email}}</td>
       <td>{{resident.phone}}</td>
     </tr>
